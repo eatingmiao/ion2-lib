@@ -1,0 +1,51 @@
+{
+  "name": "lib",
+  "version": "0.0.1",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "build:esm": "gulp prepareReleasePackage",
+    "build:publish": "gulp prepareReleasePackage && cd dist && git init && git remote add origin ... && git add -A && git commit -m \"publish new version\" && git push -f origin master ",
+    "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json"
+  },
+  "dependencies": {
+    "@angular/common": "4.4.4",
+    "@angular/compiler": "4.4.4",
+    "@angular/compiler-cli": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/forms": "4.4.4",
+    "@angular/http": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
+    "@ionic-native/core": "4.3.3",
+    "@ionic/storage": "2.1.1",
+    "@ionic-native/splash-screen": "",
+    "@ionic-native/status-bar": "",
+    "@ngx-translate/core": "^6.0.1",
+    "@ngx-translate/http-loader": "2.0.0",
+    "ionic-angular": "3.8.0",
+    "ionicons": "3.0.0",
+    "rxjs": "5.4.3",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.0.1",
+    "typescript": "2.3.4",
+    "gulp": "^3.9.1",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "run-sequence": "1.2.2",
+    "del": "2.2.2",
+    "ts-node": "3.3.0",
+    "@types/del": "2.2.31",
+    "@types/run-sequence": "0.0.28",
+    "@types/node": "^6.0.88",
+    "@types/gulp": "3.8.32"
+  },
+  "description": "A template for creating reusable module for ionic3"
+}
